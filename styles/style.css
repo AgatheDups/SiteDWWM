@@ -1,0 +1,298 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+img{
+    height: 80px;
+    margin-right: 20px;
+}
+
+nav{
+    flex-grow: 1;
+    background: #44A33D;
+}
+
+nav ul{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    align-content: center;
+}
+
+nav ul li{
+    list-style-type: none;
+    border-right: 2px solid white;
+    margin-left: 2px;
+}
+
+nav ul li:last-child{
+    border-right: none;
+}
+
+nav > ul> li>a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    background: #87BB34;
+}
+
+@media (max-width:750px){
+    nav > ul> li>a{
+        font-size: 0.8rem;
+    }
+    h1{
+        font-size: 1.9rem !important;
+    }
+}
+@media (max-width:660px){
+    header{
+        display: flex;
+        flex-direction: column;
+        nav > ul> li>a{
+            font-size: 0.55rem !important;
+        }
+    }
+}
+
+
+body{
+    background: url(../Images/A2-1920.jpg) repeat;
+}
+
+
+h1{
+    text-align: center;
+    background: #44A33D;
+    border-radius: 50px;
+    padding: 10px;
+    width: 50%;
+    margin: 0 auto;
+    color: white;
+}
+
+/* formation */
+
+.colFormation{
+    background: rgba(122, 122, 122, 0.9) !important;
+    padding: 20px;
+    margin-top: 30px;
+    color: white;
+}
+
+.rubriqueFormation{
+    border: 2px solid pink;
+    padding: 20px;
+    margin: 5px;
+
+}
+
+.rubriqueFormation-Titre{
+    background: #44A33D;
+    border-radius: 20px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+@media (max-width:1300px){
+    main{
+        font-size: 1.1rem;
+    }
+}
+
+.container-card {
+    display: flex;
+}
+
+@media (max-width:700px){
+    .container-card{
+        display: block;
+        flex: none;
+        margin: 10px;
+    }
+}
+
+/* témoignage */
+
+.temoignages{
+    justify-content: space-around;
+    width: 95%;
+}
+
+.carte-temoignage{
+    background: rgba(122, 122, 122, 0.9) !important;
+    margin: 30px 10px;
+    text-align: center;
+    border-radius: 20px !important;
+}
+
+.carte-temoignage-nom{
+    color: white;
+    background: #44A33D;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 10px;
+    width: 50%;
+    margin: 10px auto;
+}
+
+.carte-temoignage-photo img{
+    padding: 10px;
+    margin: 10px 0;
+    background: white;
+    border: 3px solid rgb(111, 53, 111);
+    max-width: 147px;
+    height: auto;
+}
+
+.carte-temoignage-entreprise, .carte-temoignage-fonction{
+    color: rgb(111, 53, 111);
+    font-weight: 800;
+    margin: 5px 0;
+}
+
+.carte-temoignage-message{
+    margin-top: 10px;
+    color: white;
+}
+
+@media (max-width:1500px){
+    .temoignages{
+        flex-wrap: wrap;
+    }
+}
+
+/* références */
+
+.gallery{
+    background: rgba(135, 187, 52, 0.8);
+    width: 90%;
+    padding: 10px;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+
+.gallery img{
+    flex: 0 0 15%;
+    width: 10%;
+    height: auto;
+    padding: 10px;
+}
+
+@media (max-width:1300px){
+    .gallery img{
+        flex: 0 0 25%;
+    }
+}
+@media (max-width:900px){
+    .gallery img{
+        flex: 0 0 40%;
+    }
+}
+
+/* contact */
+
+.form-div{
+    background: rgba(122, 122, 122, 0.9) !important;
+    width: 70%;
+    margin: 30px auto;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+}
+
+div label{
+    display: inline-block;
+    text-align: right;
+    width: 35%;
+    vertical-align: top;
+}
+
+div label:first-child{
+    font-weight: bold;
+}
+
+.div-input{
+    display: inline-block;
+    text-align: left;
+    width: 50%;
+    margin-left: 10px;
+}
+
+div input:first-child{
+    margin-left: 15px;
+}
+
+form .button{
+    width: 125px;
+    margin: 0 auto;
+}
+
+
+form .button input{
+    background: #44A33D;
+    color: white;
+    width: 20vw;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+}
+
+
+.statut, .pedago{
+    display: flex;
+    flex-direction: row;
+}
+ 
+.statut div, .pedago div{
+    width: 10vw;
+}
+
+.div-region select, #message textarea{
+    display: inline-block;
+    text-align: left;
+    width: 50%;
+    margin-left: 10px;
+}
+
+#message textarea{
+    margin: 5px 10px;
+}
+
+@media (max-width:1260px){
+    form div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    div label{
+        display: block;
+        text-align: center;
+        width: 80%;
+    }
+    
+    div input{
+        margin: 0;
+    }
+
+    .statut, .pedago{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .statut label, .pedago label{
+        width: 200px;
+    }
+
+}
